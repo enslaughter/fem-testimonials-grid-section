@@ -1,0 +1,111 @@
+body {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.grid-container {
+  display: grid;
+  padding: 10%;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.testimonial {
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.testimonial-image > img {
+  border-radius: 50%;
+  max-height: 2rem;
+  object-fit: contain;
+  margin-right: 1rem;
+}
+
+.testimonial-graduate {
+  opacity: 50%;
+}
+
+.testimonial-header {
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.testimonial-body {
+  opacity: 70%;
+  line-height: 1.1rem;
+  word-spacing: 1px;
+}
+
+.daniel {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+}
+
+.jonathan {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+}
+
+.jeanette {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  background-color: white;
+}
+
+.patrick {
+  grid-column-start: 2;
+  grid-column-end: 4;
+
+  background-color: hsl(219, 29%, 14%);
+  color: white;
+}
+
+.kira {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  background-color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 520px) {
+  grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
